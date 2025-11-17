@@ -1,0 +1,16 @@
+/node_modules
+
+# Logs
+npm-debug.log*
+.npm
+/logs
+
+# Variáveis de Ambiente
+.env
+
+# Cache do npm
+.npm/
+
+# build
+/dist
+/build
