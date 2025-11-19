@@ -77,7 +77,8 @@ const Pedido = db.define('pedido',{
         'DEBITO_ONLINE',
         'CARTEIRA_DIGITAL' // Opcional para cobrir PayPal/Mercado Pago, etc.
     ),
-    allowNull: false
+    allowNull: false,
+    defaultValue: 'CARTAO_CREDITO'
 }
 },{
     timestamps: true,

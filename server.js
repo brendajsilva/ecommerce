@@ -44,7 +44,7 @@ app.use((err, req, res, next) => {
 });
 
 // Sincronizar banco e iniciar servidor
-conn.sync({ alter: true })
+conn.sync({ force: false })
     .then(() => {
         console.log('Banco de dados sincronizado!');
         app.listen(PORT, () => {
